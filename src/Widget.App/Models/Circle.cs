@@ -18,6 +18,6 @@ namespace Widget.App.Models
     }
 
     public override string Print() =>
-      $"{nameof(Circle)} {base.Print()} {nameof(Diameter)}={Diameter}";
+      $"{nameof(Circle)} {base.Print()} Size={Diameter}";
   }
 }

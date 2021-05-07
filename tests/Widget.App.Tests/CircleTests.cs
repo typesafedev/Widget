@@ -8,8 +8,8 @@ namespace Widget.App.Tests
   public class CircleTests
   {
     [Theory]
-    [InlineData(0, 0, 10, "Circle (0, 0) Diameter=10")]
-    [InlineData(0, 1, 20, "Circle (0, 1) Diameter=20")]
+    [InlineData(0, 0, 10, "Circle (0, 0) Size=10")]
+    [InlineData(0, 1, 20, "Circle (0, 1) Size=20")]
     public void Prints_name_dimensions(int x, int y, int diameter, string expected)
     {
       var sut = new Circle(diameter, x, y);
