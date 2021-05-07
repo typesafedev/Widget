@@ -11,7 +11,7 @@ namespace Widget.App.Models
       init;
     }
 
-    public Textbox(int Width, int Height, string Text, int X, int Y) : base(X, Y, Width, Height)
+    public Textbox(int Width, int Height, string Text, int X, int Y) : base(Width, Height, X, Y)
     {
       this.Width = Width;
       this.Height = Height;
@@ -19,6 +19,6 @@ namespace Widget.App.Models
     }
 
     public override string Print() =>
-      $"{nameof(Textbox)} {base.Print()} {nameof(Width)}={Width} {nameof(Height)}={Height} {nameof(Text)}=\"{Text}\"";
+      $"{nameof(Textbox)} ({X}, {Y}) {nameof(Width)}={Width} {nameof(Height)}={Height} {nameof(Text)}=\"{Text}\"";
   }
 }
