@@ -7,14 +7,12 @@ namespace Widget.App.Services
 {
   public class WidgetService : IWidgetService
   {
-    public int? Area(IWidget widget) => widget switch
+    public double? Area(IWidget widget) => widget switch
     {
-      // Loss of precision
       ICircle circle =>
-        (int)Math.PI * (circle.Diameter / 2) * (circle.Diameter / 2),
-      // Loss of precision
+        Math.PI * (circle.Diameter / 2) * (circle.Diameter / 2),
       IEllipse ellipse =>
-        (int)Math.PI * (ellipse.HorizontalDiameter / 2) * (ellipse.VerticalDiameter / 2),
+        Math.PI * (ellipse.HorizontalDiameter / 2) * (ellipse.VerticalDiameter / 2),
       ITextbox textbox =>
         textbox.Width * textbox.Height,
       IRectangle rectangle =>
