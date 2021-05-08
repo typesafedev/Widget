@@ -1,4 +1,3 @@
-using System;
 using Widget.App.Interfaces;
 
 namespace Widget.App.Models
@@ -18,7 +17,7 @@ namespace Widget.App.Models
       this.Text = Text;
     }
 
-    public override string Print() =>
+    public override string ToString() =>
       $"{nameof(Textbox)} ({X}, {Y}) {nameof(Width)}={Width} {nameof(Height)}={Height} {nameof(Text)}=\"{Text}\"";
   }
 }

@@ -24,7 +24,7 @@ namespace Widget.App.Models
       this.Height = Height;
     }
 
-    public override string Print() =>
-      $"{nameof(Rectangle)} {base.Print()} {nameof(Width)}={Width} {nameof(Height)}={Height}";
+    public override string ToString() =>
+      $"{nameof(Rectangle)} {base.ToString()} {nameof(Width)}={Width} {nameof(Height)}={Height}";
   }
 }

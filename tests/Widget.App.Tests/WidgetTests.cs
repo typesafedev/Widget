@@ -13,7 +13,7 @@ namespace Widget.App.Tests
     {
       var sut = new Widget.App.Models.Widget(x, y);
 
-      var actual = sut.Print();
+      var actual = sut.ToString();
 
       actual.Should().Be(expected);
     }

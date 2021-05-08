@@ -24,7 +24,7 @@ namespace Widget.App.Models
       this.VerticalDiameter = VerticalDiameter;
     }
 
-    public override string Print() =>
-      $"{nameof(Ellipse)} {base.Print()} {nameof(HorizontalDiameter)}={HorizontalDiameter} {nameof(VerticalDiameter)}={VerticalDiameter}";
+    public override string ToString() =>
+      $"{nameof(Ellipse)} {base.ToString()} {nameof(HorizontalDiameter)}={HorizontalDiameter} {nameof(VerticalDiameter)}={VerticalDiameter}";
   }
 }

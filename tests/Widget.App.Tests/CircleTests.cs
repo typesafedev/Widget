@@ -14,7 +14,7 @@ namespace Widget.App.Tests
     {
       var sut = new Circle(diameter, x, y);
 
-      var actual = sut.Print();
+      var actual = sut.ToString();
 
       actual.Should().Be(expected);
     }

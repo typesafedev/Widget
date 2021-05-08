@@ -17,7 +17,7 @@ namespace Widget.App.Models
       this.Width = Width;
     }
 
-    public override string Print() =>
-      $"{nameof(Square)} {base.Print()} {nameof(Width)}={Width}";
+    public override string ToString() =>
+      $"{nameof(Square)} {base.ToString()} {nameof(Width)}={Width}";
   }
 }
